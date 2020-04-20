@@ -13,6 +13,13 @@
 		2A5C8CA3244E344400FCF332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C8CA2244E344400FCF332 /* Assets.xcassets */; };
 		2A5C8CA6244E344400FCF332 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C8CA5244E344400FCF332 /* Preview Assets.xcassets */; };
 		2A5C8CA9244E344400FCF332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C8CA7244E344400FCF332 /* LaunchScreen.storyboard */; };
+		2A5C8CB6244E479A00FCF332 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C8CB5244E479A00FCF332 /* Category.swift */; };
+		2A5C8CB8244E568F00FCF332 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C8CB7244E568F00FCF332 /* MainViewModel.swift */; };
+		2A5C8CBA244E5CB800FCF332 /* Essentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C8CB9244E5CB800FCF332 /* Essentials.swift */; };
+		2A5C8CBC244E5CF100FCF332 /* DrawingAndAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C8CBB244E5CF100FCF332 /* DrawingAndAnimation.swift */; };
+		2A5C8CBE244E5DDC00FCF332 /* AppDesignAndLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C8CBD244E5DDC00FCF332 /* AppDesignAndLayout.swift */; };
+		2A5C8CC0244E5E8600FCF332 /* FrameworkIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C8CBF244E5E8600FCF332 /* FrameworkIntegration.swift */; };
+		2A5C8CC2244E605400FCF332 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C8CC1244E605400FCF332 /* Tutorial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		2A5C8CA5244E344400FCF332 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A5C8CA8244E344400FCF332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A5C8CAA244E344400FCF332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5C8CB5244E479A00FCF332 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		2A5C8CB7244E568F00FCF332 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		2A5C8CB9244E5CB800FCF332 /* Essentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Essentials.swift; sourceTree = "<group>"; };
+		2A5C8CBB244E5CF100FCF332 /* DrawingAndAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingAndAnimation.swift; sourceTree = "<group>"; };
+		2A5C8CBD244E5DDC00FCF332 /* AppDesignAndLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDesignAndLayout.swift; sourceTree = "<group>"; };
+		2A5C8CBF244E5E8600FCF332 /* FrameworkIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkIntegration.swift; sourceTree = "<group>"; };
+		2A5C8CC1244E605400FCF332 /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +70,12 @@
 		2A5C8C9B244E344400FCF332 /* SwiftUIEx */ = {
 			isa = PBXGroup;
 			children = (
+				2A5C8CB0244E371600FCF332 /* Main */,
+				2A5C8CB4244E3A9F00FCF332 /* Resources */,
+				2A5C8CA4244E344400FCF332 /* Preview Content */,
 				2A5C8C9C244E344400FCF332 /* AppDelegate.swift */,
 				2A5C8C9E244E344400FCF332 /* SceneDelegate.swift */,
-				2A5C8CA0244E344400FCF332 /* ContentView.swift */,
-				2A5C8CA2244E344400FCF332 /* Assets.xcassets */,
-				2A5C8CA7244E344400FCF332 /* LaunchScreen.storyboard */,
 				2A5C8CAA244E344400FCF332 /* Info.plist */,
-				2A5C8CA4244E344400FCF332 /* Preview Content */,
 			);
 			path = SwiftUIEx;
 			sourceTree = "<group>";
@@ -73,6 +86,86 @@
 				2A5C8CA5244E344400FCF332 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A5C8CB0244E371600FCF332 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2A5C8CB2244E372500FCF332 /* Models */,
+				2A5C8CB3244E372C00FCF332 /* ViewModels */,
+				2A5C8CB1244E371F00FCF332 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2A5C8CB1244E371F00FCF332 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A5C8CA0244E344400FCF332 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A5C8CB2244E372500FCF332 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A5C8CB5244E479A00FCF332 /* Category.swift */,
+				2A5C8CC1244E605400FCF332 /* Tutorial.swift */,
+				2A5C8CC3244E608500FCF332 /* 1.SwiftUIEssentials */,
+				2A5C8CC4244E60A100FCF332 /* 2.DrawingAndAnimation */,
+				2A5C8CC5244E60B200FCF332 /* 3.AppDesignAndLayout */,
+				2A5C8CC6244E60BB00FCF332 /* 4.FrameworkIntegration */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A5C8CB3244E372C00FCF332 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2A5C8CB7244E568F00FCF332 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2A5C8CB4244E3A9F00FCF332 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A5C8CA2244E344400FCF332 /* Assets.xcassets */,
+				2A5C8CA7244E344400FCF332 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2A5C8CC3244E608500FCF332 /* 1.SwiftUIEssentials */ = {
+			isa = PBXGroup;
+			children = (
+				2A5C8CB9244E5CB800FCF332 /* Essentials.swift */,
+			);
+			path = 1.SwiftUIEssentials;
+			sourceTree = "<group>";
+		};
+		2A5C8CC4244E60A100FCF332 /* 2.DrawingAndAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				2A5C8CBB244E5CF100FCF332 /* DrawingAndAnimation.swift */,
+			);
+			path = 2.DrawingAndAnimation;
+			sourceTree = "<group>";
+		};
+		2A5C8CC5244E60B200FCF332 /* 3.AppDesignAndLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2A5C8CBD244E5DDC00FCF332 /* AppDesignAndLayout.swift */,
+			);
+			path = 3.AppDesignAndLayout;
+			sourceTree = "<group>";
+		};
+		2A5C8CC6244E60BB00FCF332 /* 4.FrameworkIntegration */ = {
+			isa = PBXGroup;
+			children = (
+				2A5C8CBF244E5E8600FCF332 /* FrameworkIntegration.swift */,
+			);
+			path = 4.FrameworkIntegration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +239,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5C8CBC244E5CF100FCF332 /* DrawingAndAnimation.swift in Sources */,
+				2A5C8CBA244E5CB800FCF332 /* Essentials.swift in Sources */,
+				2A5C8CB8244E568F00FCF332 /* MainViewModel.swift in Sources */,
+				2A5C8CC0244E5E8600FCF332 /* FrameworkIntegration.swift in Sources */,
 				2A5C8C9D244E344400FCF332 /* AppDelegate.swift in Sources */,
+				2A5C8CB6244E479A00FCF332 /* Category.swift in Sources */,
 				2A5C8C9F244E344400FCF332 /* SceneDelegate.swift in Sources */,
 				2A5C8CA1244E344400FCF332 /* ContentView.swift in Sources */,
+				2A5C8CBE244E5DDC00FCF332 /* AppDesignAndLayout.swift in Sources */,
+				2A5C8CC2244E605400FCF332 /* Tutorial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,9 +394,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dexcodefactory.swiftui.SwiftUIEx;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = $TARGET_NAME;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,9 +414,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dexcodefactory.swiftui.SwiftUIEx;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = $TARGET_NAME;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
