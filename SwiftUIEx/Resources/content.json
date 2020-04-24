@@ -1,0 +1,98 @@
+[
+    {
+        "id": 100,
+        "title": "SwiftUI Essentials",
+        "description": "Learn how to use SwiftUI to compose rich views out of simple ones, set up data flow, and build the navigation while watching it unfold in Xcode’s preview.",
+        "imageName": "swift_ui_essentials",
+        "bgColor": "acfaa0",
+        "tutorials": [
+            {
+                "id": 101,
+                "title": "Creating\nand\nCombining Views",
+                "description": "This tutorial guides you through building Landmarks — an iOS app for discovering and sharing the places you love. You’ll start by building the view that shows a landmark’s details.\n\nTo lay out the views, Landmarks uses stacks to combine and layer the image and text view components. To add a map to the view, you’ll include a standard MapKit component. As you refine the view’s design, Xcode provides real-time feedback so you can see how those changes translate into code.\n\nDownload the project files to begin building this project, and follow the steps below.",
+                "imageName": "creating_and_combining_views",
+            },
+            {
+                "id": 102,
+                "title": "Building Lists\nand\nNavigation",
+                "description": "With the basic landmark detail view set up, you need to provide a way for users to see the full list of landmarks, and to view the details about each location.\n\nYou’ll create views that can show information about any landmark, and dynamically generate a scrolling list that a user can tap to see a detail view for a landmark. To fine-tune the UI, you’ll use Xcode’s canvas to render multiple previews at different device sizes.\n\nDownload the project files to begin building this project, and follow the steps below.",
+                "imageName": "building_lists_and_navigation",
+            },
+            {
+                "id": 103,
+                "title": "Handling\nUser Input",
+                "description": "In the Landmarks app, a user can flag their favorite places, and filter the list to show just their favorites. To create this feature, you’ll start by adding a switch to the list so users can focus on just their favorites, and then you’ll add a star-shaped button that a user taps to flag a landmark as a favorite.\n\nDownload the starter project and follow along with this tutorial, or open the finished project and explore the code on your own.",
+                "imageName": "handling_user_input",
+            }
+        ]
+    },
+    {
+        "id": 200,
+        "title": "Drawing and Animation",
+        "description": "Discover how to draw shapes and paths to create a badge that you’ll animate, while also creating seamless transitions between views.",
+        "imageName": "drawing_and_animation",
+        "bgColor": "ffd480",
+        "tutorials": [
+            {
+                "id": 201,
+                "title": "Drawing Paths\nand\nShapes",
+                "description": "Users receive a badge whenever they visit a landmark in their list. Of course, for a user to receive a badge, you’ll need to create one. This tutorial takes you through the process of creating a badge by combining paths and shapes, which you then overlay with another shape that represents the location.\n\nIf you want to create multiple badges for different kinds of landmarks, try experimenting with the overlaid symbol, varying the amount of repetition, or changing the various angles and scales.\n\nFollow the steps to build this project, or download the finished project to explore on your own.",
+                "imageName": "drawing_paths_and_shapes",
+            },
+            {
+                "id": 202,
+                "title": "Animating Views\nand\nTransitions",
+                "description": "When using SwiftUI, you can individually animate changes to views, or to a view’s state, no matter where the effects are. SwiftUI handles all the complexity of these combined, overlapping, and interruptible animations for you.\n\nIn this tutorial, you’ll animate a view that contains a graph for tracking the hikes a user takes while using the Landmarks app. Using the animation(_:) modifier, you’ll see just how easy it is to animate a view.\n\nDownload the starter project and follow along with this tutorial, or open the finished project and explore the code on your own.",
+                "imageName": "animating_views_and_transitions",
+            }
+        ]
+    },
+    {
+        "id": 300,
+        "title": "App Design and Layout",
+        "description": "Explore the structure and layout of more complex interfaces built with SwiftUI.",
+        "imageName": "app_design_and_layout",
+        "bgColor": "ff9e9e",
+        "tutorials": [
+            {
+                "id": 301,
+                "title": "Composing\nComplex Interfaces",
+                "description": "The home screen for Landmarks shows a scrolling list of categories, with horizontally scrolling landmarks within each category. As you build this primary navigation, you’ll explore how composed views can adapt to different device sizes and orientations.\n\nFollow the steps to build this project, or download the finished project to explore on your own.",
+                "imageName": "composing_complex_interfaces",
+            },
+            {
+                "id": 302,
+                "title": "Working\nwith UI Controls",
+                "description": "In the Landmarks app, users can create a profile to express their personality. To give users the ability to change their profile, you’ll add an edit mode and design the preferences screen.\n\nYou’ll work with a variety of common user interface controls for data entry, and update the Landmarks model types whenever the user saves their changes.\n\nFollow the steps to build this project, or download the finished project to explore on your own.",
+                "imageName": "working_with_ui_controls",
+            }
+        ]
+    },
+    {
+        "id": 400,
+        "title": "Framework Integration",
+        "description": "Use SwiftUI views together with the views and view controllers from platform-specific UI frameworks.",
+        "imageName": "framework_integration",
+        "bgColor": "9ed2ff",
+        "tutorials": [
+            {
+                "id": 401,
+                "title": "Creating\nand\nCombining Views",
+                "description": "SwiftUI works seamlessly with the existing UI frameworks on all Apple platforms. For example, you can place UIKit views and view controllers inside SwiftUI views, and vice versa.\n\nThis tutorial shows you how to convert the featured landmark from the home screen to wrap instances of UIPageViewController and UIPageControl. You’ll use UIPageViewController to display a carousel of SwiftUI views, and use state variables and bindings to coordinate data updates throughout the user interface.\n\nFollow the steps to build this project, or download the finished project to explore on your own.",
+                "imageName": "interfacing_with_uikit",
+            },
+            {
+                "id": 402,
+                "title": "Creating\na watchOS App",
+                "description": "This tutorial gives you a chance to apply much of what you’ve already learned about SwiftUI, and — with little effort — migrate the Landmarks app to watchOS.\n\nYou’ll start by adding a watchOS target to your project, before copying over the shared data and views you created for the iOS app. With all of the assets in place, you’ll customize the SwiftUI views to display the detail and list views on watchOS.\n\nFollow the steps to build this project, or download the finished project to explore on your own.",
+                "imageName": "creating_watchos_app",
+            },
+            {
+                "id": 403,
+                "title": "Creating\na macOS App",
+                "description": "After creating a version of the Landmarks app for watchOS, it’s time to set your sights on something bigger: bringing Landmarks to the Mac. You’ll build upon everything you’ve learned so far, to round out the experience of building a SwiftUI app for iOS, watchOS, and macOS.\n\nYou’ll start by adding a macOS target to your project, and then reusing the shared data you created for the iOS app. With all of the assets in place, you’ll create SwiftUI views to display list and detail views on macOS.\n\nFollow the steps to build this project, or download the finished project to explore on your own.",
+                "imageName": "creating_macos_app",
+            }
+        ]
+    }
+]
