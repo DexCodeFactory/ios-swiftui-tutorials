@@ -70,13 +70,13 @@
 			path = Commons;
 			sourceTree = "<group>";
 		};
-		2A24D3B3244E9EDD00CF2AAA /* SubCategory */ = {
+		2A24D3B3244E9EDD00CF2AAA /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
 				2A24D3B5244E9EF800CF2AAA /* ViewModels */,
 				2A24D3B4244E9EF100CF2AAA /* Views */,
 			);
-			path = SubCategory;
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
 		2A24D3B4244E9EF100CF2AAA /* Views */ = {
@@ -118,7 +118,7 @@
 			children = (
 				2A24D3B2244E9DE900CF2AAA /* Commons */,
 				2A5C8CB0244E371600FCF332 /* Category */,
-				2A24D3B3244E9EDD00CF2AAA /* SubCategory */,
+				2A24D3B3244E9EDD00CF2AAA /* Tutorial */,
 				2A5C8CB4244E3A9F00FCF332 /* Resources */,
 				2A5C8CA4244E344400FCF332 /* Preview Content */,
 				2A5C8C9C244E344400FCF332 /* AppDelegate.swift */,
