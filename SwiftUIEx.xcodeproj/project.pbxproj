@@ -70,13 +70,13 @@
 			path = Commons;
 			sourceTree = "<group>";
 		};
-		2A24D3B3244E9EDD00CF2AAA /* Tutorial */ = {
+		2A24D3B3244E9EDD00CF2AAA /* TutorialList */ = {
 			isa = PBXGroup;
 			children = (
 				2A24D3B5244E9EF800CF2AAA /* ViewModels */,
 				2A24D3B4244E9EF100CF2AAA /* Views */,
 			);
-			path = Tutorial;
+			path = TutorialList;
 			sourceTree = "<group>";
 		};
 		2A24D3B4244E9EF100CF2AAA /* Views */ = {
@@ -117,8 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				2A24D3B2244E9DE900CF2AAA /* Commons */,
-				2A5C8CB0244E371600FCF332 /* Category */,
-				2A24D3B3244E9EDD00CF2AAA /* Tutorial */,
+				2A5C8CB0244E371600FCF332 /* CategoryList */,
+				2AD1F335245269C100A01889 /* TutorialDetail */,
+				2A24D3B3244E9EDD00CF2AAA /* TutorialList */,
 				2A5C8CB4244E3A9F00FCF332 /* Resources */,
 				2A5C8CA4244E344400FCF332 /* Preview Content */,
 				2A5C8C9C244E344400FCF332 /* AppDelegate.swift */,
@@ -136,13 +137,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2A5C8CB0244E371600FCF332 /* Category */ = {
+		2A5C8CB0244E371600FCF332 /* CategoryList */ = {
 			isa = PBXGroup;
 			children = (
 				2A5C8CB3244E372C00FCF332 /* ViewModels */,
 				2A5C8CB1244E371F00FCF332 /* Views */,
 			);
-			path = Category;
+			path = CategoryList;
 			sourceTree = "<group>";
 		};
 		2A5C8CB1244E371F00FCF332 /* Views */ = {
@@ -202,6 +203,13 @@
 				2AD1F32F245228C400A01889 /* UIColorExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2AD1F335245269C100A01889 /* TutorialDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TutorialDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

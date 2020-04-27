@@ -9,10 +9,19 @@
 import Foundation
 
 struct Content: DataModelCodable, Identifiable {
-    var id: Int
-    var title: String
-    var description: String
-    var imageName: String
-    var bgColor: String?
-    var tutorials: [Content]?
+    let id: Int
+    let title: String
+    let description: String
+    let imageName: String
+    let bgColor: String?
+    let tutorials: [Content]?
+    
+    init(id: Int, title: String, description: String, imageName: String, bgColor: String? = nil, tutorials: [Content]? = []) {
+        self.id = id
+        self.title = title
+        self.description = description
+        self.imageName = imageName
+        self.bgColor = bgColor
+        self.tutorials = tutorials
+    }
 }

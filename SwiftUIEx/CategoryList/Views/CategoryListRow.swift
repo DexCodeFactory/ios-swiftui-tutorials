@@ -25,6 +25,11 @@ struct CategoryListRow: View {
             
             Spacer(minLength: 5)
         }
+        .contextMenu {
+            ForEach(category.tutorials ?? []) { tutorial in
+                Text(tutorial.title.replacingOccurrences(of: "\n", with: " "))
+            }
+        }
     }
 }
 
