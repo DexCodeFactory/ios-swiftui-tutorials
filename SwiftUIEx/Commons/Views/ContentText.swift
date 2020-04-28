@@ -37,11 +37,13 @@ struct ContentText: ViewModifier {
 }
 
 extension ContentText {
+    
     private func containedView(_ content: ContentText.Content) -> AnyView {
         switch style {
         case .categoryListTitle:
             return AnyView(
                 content
+                    .foregroundColor(Color(UIColor(hexString: "494949")))
                     .font(.system(size: 20, weight: .semibold))
                     .lineLimit(nil)
                     .lineSpacing(10)
@@ -49,7 +51,6 @@ extension ContentText {
         case .tutorialTitle:
         return AnyView(
             content
-                .foregroundColor(.black)
                 .font(.system(size: 30, weight: .bold))
                 .lineLimit(nil)
                 .multilineTextAlignment(.center)
@@ -68,7 +69,6 @@ extension ContentText {
         case .tutorialDescription:
             return AnyView(
                 content
-                    .foregroundColor(.black)
                     .font(.system(size: 18))
                     .lineLimit(nil)
                     .multilineTextAlignment(.center)

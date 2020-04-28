@@ -28,6 +28,7 @@ struct TutorialList: View {
                 TutorialListRow(tutorial: tutorial)
             }
         }
+        .preferredColorScheme(.light)
     }
 }
 

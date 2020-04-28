@@ -33,10 +33,7 @@ struct CategoryListRowContextMenu: View {
                 Button(action: {
                     self.isTutorialPresented.toggle()
                 }) {
-                    HStack {
-                        Text(tutorial.title.replacingOccurrences(of: "\n", with: " "))
-                        Image(systemName: "star")
-                    }
+                    Text(tutorial.title.replacingOccurrences(of: "\n", with: " "))
                 }
                 .sheet(isPresented: self.$isTutorialPresented) {
                     EmptyView()
