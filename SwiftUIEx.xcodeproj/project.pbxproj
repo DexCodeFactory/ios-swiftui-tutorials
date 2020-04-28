@@ -11,6 +11,7 @@
 		2A24D3B7244E9F0600CF2AAA /* TutorialList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24D3B6244E9F0600CF2AAA /* TutorialList.swift */; };
 		2A24D3B9244EA01000CF2AAA /* TutorialListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24D3B8244EA01000CF2AAA /* TutorialListRow.swift */; };
 		2A24D3BC244EA37D00CF2AAA /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24D3BB244EA37D00CF2AAA /* Content.swift */; };
+		2A4440DE2457B67B00AA232C /* CategoryListRowContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4440DD2457B67B00AA232C /* CategoryListRowContextMenu.swift */; };
 		2A5C8C9D244E344400FCF332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C8C9C244E344400FCF332 /* AppDelegate.swift */; };
 		2A5C8C9F244E344400FCF332 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C8C9E244E344400FCF332 /* SceneDelegate.swift */; };
 		2A5C8CA1244E344400FCF332 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C8CA0244E344400FCF332 /* CategoryList.swift */; };
@@ -31,6 +32,7 @@
 		2A24D3B6244E9F0600CF2AAA /* TutorialList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialList.swift; sourceTree = "<group>"; };
 		2A24D3B8244EA01000CF2AAA /* TutorialListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialListRow.swift; sourceTree = "<group>"; };
 		2A24D3BB244EA37D00CF2AAA /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		2A4440DD2457B67B00AA232C /* CategoryListRowContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListRowContextMenu.swift; sourceTree = "<group>"; };
 		2A5C8C99244E344400FCF332 /* SwiftUIEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5C8C9C244E344400FCF332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A5C8C9E244E344400FCF332 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				2A5C8CA0244E344400FCF332 /* CategoryList.swift */,
 				2A24D3B0244E9CED00CF2AAA /* CategoryListRow.swift */,
+				2A4440DD2457B67B00AA232C /* CategoryListRowContextMenu.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				2AD1F330245228C400A01889 /* UIColorExtensions.swift in Sources */,
 				2AD1F3282451DD7B00A01889 /* DataModelCodable.swift in Sources */,
 				2A5C8C9F244E344400FCF332 /* SceneDelegate.swift in Sources */,
+				2A4440DE2457B67B00AA232C /* CategoryListRowContextMenu.swift in Sources */,
 				2A5C8CA1244E344400FCF332 /* CategoryList.swift in Sources */,
 				2AD1F33224522FFE00A01889 /* TutorialViewModel.swift in Sources */,
 				2A24D3BC244EA37D00CF2AAA /* Content.swift in Sources */,

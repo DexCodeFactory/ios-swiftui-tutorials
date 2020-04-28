@@ -25,15 +25,7 @@ struct TutorialList: View {
                 Spacer()
             }
             ForEach(model.category.tutorials ?? []) { tutorial in
-                ZStack {
-                    TutorialListRow(tutorial: tutorial)
-                    NavigationLink(destination: EmptyView()) {
-                        EmptyView()
-                    }
-                    .hidden()
-                }
-                .shadow(radius: 3, x: 5, y: 5)
-                .padding(.bottom, 15)
+                TutorialListRow(tutorial: tutorial)
             }
         }
     }

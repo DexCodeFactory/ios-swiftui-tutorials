@@ -10,6 +10,8 @@ import SwiftUI
 
 struct TutorialListRow: View {
     
+    @State var isTutorialDetailPresented = false
+    
     var tutorial: Content
     
     var body: some View {
@@ -17,10 +19,19 @@ struct TutorialListRow: View {
             Image(tutorial.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            Text(tutorial.title)
-                .textStyle(.tutorialListTitle)
+            Button(action: {
+                self.isTutorialDetailPresented.toggle()
+            }) {
+                Text(tutorial.title)
+                    .textStyle(.tutorialListTitle)
+            }
+            .sheet(isPresented: self.$isTutorialDetailPresented) {
+                EmptyView()
+            }
         }
         .cornerRadius(20)
+        .shadow(radius: 3, x: 5, y: 5)
+        .padding(.bottom, 15)
     }
 }
 

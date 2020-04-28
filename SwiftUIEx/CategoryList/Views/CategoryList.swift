@@ -19,17 +19,7 @@ struct CategoryList: View {
     var body: some View {
         NavigationView {
             List(model.categories) { category in
-                ZStack {
-                    CategoryListRow(category: category)
-                    NavigationLink(destination: TutorialList(with: TutorialViewModel(with: category))) {
-                        EmptyView()
-                    }
-                    .hidden()
-                }
-                .background(Color(UIColor(hexString: category.bgColor ?? "FFFFFF")))
-                .cornerRadius(20)
-                .shadow(radius: 3, x: 5, y: 5)
-                .padding(.top, 17)
+                CategoryListRow(category: category)
             }
             .navigationBarTitle(
                 Text(model.navTitle)

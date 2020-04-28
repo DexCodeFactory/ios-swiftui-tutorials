@@ -9,27 +9,21 @@
 import SwiftUI
 
 struct CategoryListRow: View {
+    
     var category: Content
     
     var body: some View {
-        HStack(spacing: 30) {
-            Image(category.imageName)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .padding(.leading, 20)
-                .frame(width: 95, height: 140, alignment: .leading)
-                .shadow(radius: 5.0)
-            
-            Text(category.title)
-                .textStyle(.categoryListTitle)
-            
-            Spacer(minLength: 5)
-        }
-        .contextMenu {
-            ForEach(category.tutorials ?? []) { tutorial in
-                Text(tutorial.title.replacingOccurrences(of: "\n", with: " "))
+        ZStack {
+            CategoryListRowContextMenu(category: category)
+            NavigationLink(destination: TutorialList(with: TutorialViewModel(with: category))) {
+                EmptyView()
             }
+            .hidden()
         }
+        .background(Color(UIColor(hexString: category.bgColor ?? "FFFFFF")))
+        .cornerRadius(20)
+        .shadow(radius: 3, x: 5, y: 5)
+        .padding(.top, 17)
     }
 }
 
