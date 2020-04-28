@@ -20,10 +20,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        let categories: [Content] = Content.from(content)
+        let model = CategoryViewModel(with: categories)
+        let contentView = CategoryList(with: model)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
+            
+            UITableView.appearance().separatorStyle = .none
+            UITableViewCell.appearance().selectionStyle = .none
+            
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
@@ -60,3 +66,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 }
 
+extension SceneDelegate {
+    
+    fileprivate var content: Data {
+        let fileName = "content"
+        guard let url = Bundle(for: type(of: self)).url(forResource: fileName, withExtension: "json") else {
+            assert(false, "Unable to find \(fileName) in the bundle")
+        }
+
+        do {
+            return try Data(contentsOf: url)
+        } catch let exception {
+            assert(false, "Unable to parse contents of url \(url). Exeption: \(exception)")
+        }
+    }
+}
