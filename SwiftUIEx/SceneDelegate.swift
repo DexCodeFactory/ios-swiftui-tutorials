@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let categories: [Content] = Content.from(content)
+        let categories: [Content] = Content.from(JSONLoader["content"])
         let model = CategoryViewModel(with: categories)
         let contentView = CategoryList(with: model)
 
@@ -63,21 +63,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
-    }
-}
-
-extension SceneDelegate {
-    
-    fileprivate var content: Data {
-        let fileName = "content"
-        guard let url = Bundle(for: type(of: self)).url(forResource: fileName, withExtension: "json") else {
-            assert(false, "Unable to find \(fileName) in the bundle")
-        }
-
-        do {
-            return try Data(contentsOf: url)
-        } catch let exception {
-            assert(false, "Unable to parse contents of url \(url). Exeption: \(exception)")
-        }
     }
 }
