@@ -8,9 +8,18 @@
 
 import SwiftUI
 
+let landmarkData: [Landmark] = Landmark.from(JSONLoader["landmarkData"])
+
 struct BuildingListsAndNavigation: View {
     var body: some View {
-        Text("Building Lists and Navigation")
+        NavigationView {
+            List(landmarkData) { landmark in
+                NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+                    LandmarkRow(landmark: landmark)
+                }
+            }
+            .navigationBarTitle(Text("Landmarks"))
+        }
     }
 }
 

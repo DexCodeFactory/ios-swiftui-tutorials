@@ -47,23 +47,6 @@ struct CategoryListRowContextMenu: View, TutorialDetailPresentable {
     }
 }
 
-protocol TutorialDetailPresentable {}
-extension TutorialDetailPresentable {
-    
-    func presentView(for tutorialID: Int) -> AnyView {
-        switch tutorialID {
-        case 101:
-            return AnyView(CreateAndCombining())
-        case 102:
-            return AnyView(BuildingListsAndNavigation())
-        case 103:
-            return AnyView(HandlingUserInput())
-        default:
-            return AnyView(EmptyView())
-        }
-    }
-}
-
 struct CategoryListRowContextMenu_Previews: PreviewProvider {
     static var previews: some View {
         let category = Content(id: 999, title: "Test Title", description: "Test DESC", imageName: "Image Name")

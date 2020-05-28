@@ -19,6 +19,7 @@
 		2A5C8CA6244E344400FCF332 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C8CA5244E344400FCF332 /* Preview Assets.xcassets */; };
 		2A5C8CA9244E344400FCF332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C8CA7244E344400FCF332 /* LaunchScreen.storyboard */; };
 		2A5C8CB8244E568F00FCF332 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C8CB7244E568F00FCF332 /* CategoryViewModel.swift */; };
+		2A871335247F4E8E003B83F6 /* TutorialDetailPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A871334247F4E8E003B83F6 /* TutorialDetailPresentable.swift */; };
 		2ACFC798245919B300C8786A /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACFC797245919B300C8786A /* CircleImage.swift */; };
 		2ACFC79A24591B0900C8786A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACFC79924591B0900C8786A /* MapView.swift */; };
 		2ACFC79C24591BE300C8786A /* CreateAndCombining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACFC79B24591BE300C8786A /* CreateAndCombining.swift */; };
@@ -52,6 +53,7 @@
 		2A5C8CA8244E344400FCF332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A5C8CAA244E344400FCF332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A5C8CB7244E568F00FCF332 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		2A871334247F4E8E003B83F6 /* TutorialDetailPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetailPresentable.swift; sourceTree = "<group>"; };
 		2ACFC797245919B300C8786A /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		2ACFC79924591B0900C8786A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2ACFC79B24591BE300C8786A /* CreateAndCombining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAndCombining.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 			children = (
 				2AD1F3272451DD7B00A01889 /* DataModelCodable.swift */,
 				2ACFC7A22459254A00C8786A /* JSONLoader.swift */,
+				2A871334247F4E8E003B83F6 /* TutorialDetailPresentable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				2ACFC7AC245939A400C8786A /* LandmarkRow.swift in Sources */,
 				2A24D3BC244EA37D00CF2AAA /* Content.swift in Sources */,
 				2ACFC798245919B300C8786A /* CircleImage.swift in Sources */,
+				2A871335247F4E8E003B83F6 /* TutorialDetailPresentable.swift in Sources */,
 				2ACFC7A5245926DD00C8786A /* BuildingListsAndNavigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
