@@ -8,9 +8,10 @@
 
 import SwiftUI
 
-struct CategoryListRowContextMenu: View {
+struct CategoryListRowContextMenu: View, TutorialDetailPresentable {
     
     @State var isTutorialPresented: Bool = false
+    @State var tappedTutorialId: Int = 0
     
     var category: Content
     
@@ -31,12 +32,15 @@ struct CategoryListRowContextMenu: View {
         .contextMenu {
             ForEach(category.tutorials ?? []) { tutorial in
                 Button(action: {
+                    self.tappedTutorialId = tutorial.id
                     self.isTutorialPresented.toggle()
                 }) {
                     Text(tutorial.title.replacingOccurrences(of: "\n", with: " "))
                 }
                 .sheet(isPresented: self.$isTutorialPresented) {
-                    EmptyView()
+                    if tutorial.id == self.tappedTutorialId {
+                        self.presentView(for: tutorial.id)
+                    }
                 }
             }
         }

@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct TutorialListRow: View {
+struct TutorialListRow: View, TutorialDetailPresentable {
     
     @State var isTutorialDetailPresented = false
     
@@ -26,7 +26,7 @@ struct TutorialListRow: View {
                     .textStyle(.tutorialListTitle)
             }
             .sheet(isPresented: self.$isTutorialDetailPresented) {
-                EmptyView()
+                self.presentView(for: self.tutorial.id)
             }
         }
         .cornerRadius(20)

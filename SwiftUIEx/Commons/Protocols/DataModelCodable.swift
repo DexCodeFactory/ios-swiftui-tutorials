@@ -19,4 +19,12 @@ extension DataModelCodable {
             preconditionFailure("Invalid Decodable Object.")
         }
     }
+    
+    static func arrayFrom<T: Codable>(_ data: Data) -> [T] {
+        do {
+            return try JSONDecoder().decode([T].self, from: data)
+        } catch {
+            preconditionFailure("Invalid Decodable Object array.")
+        }
+    }
 }
