@@ -10,7 +10,7 @@ import SwiftUI
 
 struct HandlingUserInput: View {
     var body: some View {
-        Text("Handling User Input")
+        WebView(urlPath: "handling-user-input")
     }
 }
 
